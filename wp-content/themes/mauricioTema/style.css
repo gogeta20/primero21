@@ -1,0 +1,26 @@
+/* ETIQUETAS CSS QUE INDICAN A WORDPRESS QUE ESTE ES EL TEMA HIJO */
+ 
+/*
+Theme Name: mauricioTema
+Template: sydney
+*/
+
+.entry-title{ /* esto el nombre de la pagina lo oculte por que no quiero ver el nombre dos veces */
+    display: none;
+}
+
+.admin-bar .site-header { /* aqui estoy cambiando el estilo de el menu */
+    top: 12px;
+    background-color: black;
+}
+#mainnav ul li a {
+    font-size: 16px !important;
+}
+/*            
+.col-md-9 {
+    width: 75%;
+}                      aqui estoy guardando la configuracion anterior y este es el nuevo
+*/
+.col-md-9 {
+    width: 100%;
+}

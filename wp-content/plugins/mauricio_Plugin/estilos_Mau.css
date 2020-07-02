@@ -1,0 +1,8 @@
+.plugin{
+    text-decoration: underline;
+    color: rgb(255, 6, 6);
+    font-style: italic;
+}
+h2,h3,h4,p,h1{
+    color: rgb(238, 39, 25)!important;
+}

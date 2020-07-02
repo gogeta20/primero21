@@ -1,0 +1,63 @@
+/*
+Theme Name: primero21
+Theme URI: 
+Author: mauricio vargas
+Author URI: 
+Description: bueno este es mi primer tema, lo estoy haciendo para aprender mas sobre progracion en php
+Tags: blog, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template,sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.0
+Requires at least: 
+Tested up to: 
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: 
+*/
+*{
+	margin:0;
+	padding:0;
+}
+
+nav ul{
+	display: flex;
+	list-style: none;
+
+}
+
+nav ul li{
+	font-size: 20px;
+	text-align: center;
+	margin: 0 10px;
+	text-decoration: none;
+	color:rgb(75, 73, 73);
+	transition: 0.7s;
+}
+
+nav li:hover {
+	text-decoration: none;
+	color: black;
+	transform: scale(1.2);
+}
+nav  li:active {
+	color: rgb(220, 247, 217);
+}
+aside{
+	margin: 15px auto;
+}
+aside ul{
+	list-style: circle;
+	color: rgba(104, 180, 60, 0.836);
+}
+
+aside ul li{
+	margin: 10px;
+}
+
+.asideWP{
+	border-bottom: 2px solid black;
+}
+.articleNoticias div{
+	flex-grow: 2;
+}
+
+/*@import url('../temaPadre/style.css');    asi podriamos traernos los estilos del tema padre sin usar una function*/
