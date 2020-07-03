@@ -85,8 +85,8 @@ add_action( 'widgets_init', 'registroSidebar' );
 function products_post_type() {
 
 	$labels = array(
-		'name'                  => _x( 'Animes', 'Post Type General Name', 'primero21' ),
-		'singular_name'         => _x( 'Anime', 'Post Type Singular Name', 'primero21' ),
+		'name'                  => _x( 'animes', 'Post Type General Name', 'primero21' ),
+		'singular_name'         => _x( 'anime', 'Post Type Singular Name', 'primero21' ),
 		'menu_name'             => __( 'Series Anime', 'primero21' ),
 		'name_admin_bar'        => __( 'admin anime', 'primero21' ),
 		'archives'              => __( 'anime Archives', 'primero21' ),
@@ -126,7 +126,7 @@ function products_post_type() {
 		'has_archive'           => true,
 		'hierarchical'          => false,
 		'menu_position'         => 5,
-		'supports'              => array( 'titulo', 'editor', 'thumbnail', 'comments', 'custom-fields' ),
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'comments', 'custom-fields' ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'label'                 => __( 'animes', 'primero21' ),
 		/*'show_in_admin_bar'     => true,
@@ -134,7 +134,7 @@ function products_post_type() {
 		'can_export'            => true,
 		'exclude_from_search'   => false,*/
 	);
-	register_post_type( 'Animes', $args );
+	register_post_type( 'animes', $args );
 
 }
 add_action( 'init', 'products_post_type', 1 );

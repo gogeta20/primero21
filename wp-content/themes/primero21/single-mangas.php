@@ -2,7 +2,7 @@
 
 <section>
 
-    <h2 class="titulo">noticias de la liga Lugol 2019 - 2020</h2>
+    <h2 class="titulo">single-mangas.php</h2>
    
 
 

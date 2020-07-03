@@ -13,8 +13,8 @@
 
                             <?php
                                 $argumentos = array(
-                                    'post-type'         => 'mangas',
-                                    'posts-per-page'    => -1,
+                                    'post_type'         => 'mangas',
+                                    'posts_per_page'    => -1,
                                     'orderby'           => 'date',
                                     'order'             => 'DESC',
                                 );
@@ -22,10 +22,27 @@
                             ?>
 
                             <?php while($mangas->have_posts()):$mangas->the_post();?>
-                                <?php the_post_thumbnail('mau');?>
-                                <?php the_title();?>
-                                <?php the_content();?>
-                                <p>aqui en manga.php</p>
+                                <div class="z1">
+                                    <a href="<?php the_permalink()?>">
+                                    <?php
+                                        if (has_post_thumbnail()) {
+                                            the_post_thumbnail();
+                                        }
+                                    ?>
+                                    </a>
+                                </div>
+                                <div class="z2">
+                                    <a href="<?php the_permalink()?>"><h2 class="articleNoticiasTitulo titulo"><?php the_title()?></h2></a>
+                                    <div class="noticiasFecha"><?php echo get_the_date()?></div>
+                                    <div class="dc">
+
+                                        <div id=""  class="visible"><?php the_content()?></div>
+                                        <div class="botonSaberMas" id="${i}">
+                                            <button id="" value="" class="botonSaberMas">ampliar</button>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
                             <?php endwhile; ?>
                         </article>
                     <?php endwhile; ?>

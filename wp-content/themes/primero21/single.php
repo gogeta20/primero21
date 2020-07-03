@@ -43,19 +43,7 @@
         </div>
     </div>
     <aside id="asideNoticias"> 
-        <h3>aside</h3>
-        <div>
-            <img src="" alt="imagen">
-            <a href=""><p>este es el titulo</p></a>
-        </div>
-        <div>
-            <img src="" alt="imagen">
-            <a href=""><p>este es el titulo 2</p></a>
-        </div>
-        <div>
-            <img src="" alt="imagen">
-            <a href=""><p>este es el titulo 3</p></a>
-        </div>
+      <p>este es el single.php</p>
     </aside>
     
     </div>
